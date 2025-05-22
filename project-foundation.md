@@ -24,7 +24,7 @@ This document outlines best practices and setup recommendations to establish a *
 
 ## 🗂 2. Project Structure
 
-`\`\`\``):
+```
 src/
 │
 ├── app/                  # App root (entry point, routes)
@@ -44,7 +44,7 @@ src/
 ├── services/             # External integrations (e.g., Supabase, Stripe)
 ├── styles/               # Global styles or Tailwind config
 └── types/                # Global TypeScript types
-\`\`\`
+```
 
 > ✅ **Tip:** Prefer a *feature-first* folder structure over type-based (e.g., `auth/` over `components/auth/`).
 
@@ -90,17 +90,17 @@ src/
 
 Use `index.ts` files for every `context/`, `hooks/`, and `components/` folder:
 
-\`\`\`ts
+```ts
 // features/auth/context/index.ts
 export * from './AuthContext';
 export * from './useAuthContext';
-\`\`\`
+```
 
 This allows cleaner imports:
 
-\`\`\`ts
+```ts
 import { useAuthContext } from '@/features/auth/context';
-\`\`\`
+```
 
 ---
 
