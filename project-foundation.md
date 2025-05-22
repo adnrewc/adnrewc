@@ -24,7 +24,7 @@ This document outlines best practices and setup recommendations to establish a *
 
 ## 🗂 2. Project Structure
 
-\`\`\`bash
+`\`\`\``):
 src/
 │
 ├── app/                  # App root (entry point, routes)
